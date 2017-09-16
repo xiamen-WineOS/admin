@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import ToggleTab from 'components/ToggleTab'
+import ToggleTab from '@/components/ToggleTab'
 
 export default {
   components: {

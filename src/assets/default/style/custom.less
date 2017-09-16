@@ -1,0 +1,140 @@
+﻿@charset "utf-8";
+
+.content-wrapper {
+  padding: 0 50px;
+  margin-top: 50px;
+  min-height: 250px;
+  /*height: -moz-calc(100vh - 50px);*/
+  /*height: -webkit-calc(100vh - 50px);*/
+  height: calc(100vh - 50px);
+  overflow: auto;
+  /*width: calc(100vw - 180px);*/
+  width: 100%;
+}
+.content-wrapper.toggle {
+  width: auto;
+}
+.side-nav.open {
+  z-index: 2;
+}
+.sidebar-overlay-open {
+  display: block;
+  top: 50px;
+  z-index: 0;
+}
+.frame_content.overlay-open {
+  left: 180px;
+}
+.full-content .frame_content {
+  margin-top: 0;
+  height: 100vh;
+  /*transition: left .3s;*/
+}
+@media screen and (max-width: 420px) {
+  .el-message-box__wrapper .el-message-box {
+    width: auto;
+  }
+}
+
+.dept-tree {
+  border: none;
+}
+.modal {
+  overflow: hidden;
+}
+.modal .modal_wrap {
+  padding: 0;
+  max-height: calc(100vh - 400px);
+}
+.modal .modal_wrap .tree {
+  overflow: hidden;
+  height: auto;
+}
+.full-content .product-navbar.dept-navbar-open {
+  left: 0;
+  transition: left .3s;
+}
+.full-content .product-con .btn-switch {
+  display: none;
+}
+
+.user-tag {
+  margin: 0 5px 5px 0;
+}
+.full-content .mobile-menu .el-dialog__header {
+  display: none;
+}
+.full-content .mobile-menu .el-dialog__body {
+  padding: 0;
+}
+.full-content .d-search {
+  margin-left: 0;
+}
+
+.dropdown-content {
+  padding: 0;
+}
+.dropdown-content .modhead,
+.dropdown-content .modcon {
+  border-width: 0 0 1px 0;
+}
+
+.input-part {
+  width: 115px;
+}
+
+/* 组件部分 start */
+.v_table .page {
+  padding-right: 0;
+}
+
+.el-dialog--full.modal-bottom {
+  bottom: 0;
+  width: 100%;
+  height: inherit;
+  top: auto;
+}
+.el-dialog--full.modal-bottom .el-dialog__header,
+.el-dialog--full.modal-bottom .el-dialog__footer {
+  display: none;
+}
+.el-dialog--full.modal-bottom .el-dialog__body{
+  padding: 0;
+}
+.modal-bottom-wrapper.dialog-fade-enter-active, .modal-bottom-wrapper.dialog-fade-leave-active {
+  transition: all .3s ease;
+  animation: none;
+}
+.modal-bottom-wrapper.dialog-fade-enter, .modal-bottom-wrapper.dialog-fade-leave-active {
+  bottom: -100%;
+  opacity: 0;
+  animation: none;
+}
+
+.tree-fade-enter-active {
+  transition: all .2s ease;
+}
+.tree-fade-leave-active {
+  transition: all .1s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.tree-fade-enter, .tree-fade-leave-active {
+  transform: translateY(-10px);
+  opacity: 0;
+}
+
+.data-loading .el-loading-mask {
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+.data-loading-active .el-loading-mask {
+  opacity: .8;
+}
+/* 组件部分 end */
+
+.panel-heading-right {
+  height: 50px;
+  padding: 6px 0px;
+}
+.panel-heading-right > button {
+  vertical-align: top;
+}
