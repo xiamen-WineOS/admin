@@ -8,6 +8,9 @@
 # install dependencies
 npm install
 
+# install dependencies 使用淘宝的镜像
+npm install --registry=https://registry.npm.taobao.org
+
 # serve with hot reload at localhost:8080
 npm run dev
 
